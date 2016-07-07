@@ -1,12 +1,10 @@
 package it.localhost.app.mobile.learningdagger.data.model;
 
-import java.util.Date;
-
 public class Contact {
 
     private String name;
     private String surname;
-    private Date birthday;
+    private String birthday;
     private char sex;
 
     public String getName() {
@@ -25,11 +23,11 @@ public class Contact {
         this.surname = surname;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

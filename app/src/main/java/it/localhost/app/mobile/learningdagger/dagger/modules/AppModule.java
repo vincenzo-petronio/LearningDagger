@@ -10,8 +10,6 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import it.localhost.app.mobile.learningdagger.AddressBookApplication;
-import it.localhost.app.mobile.learningdagger.data.model.ContactsManager;
-import it.localhost.app.mobile.learningdagger.utils.NetworkApi;
 import it.localhost.app.mobile.learningdagger.utils.NetworkStateManager;
 
 /**
@@ -72,9 +70,4 @@ public class AppModule {
     NetworkStateManager provideNetworkStateManager(ConnectivityManager connectivityManager) {
         return new NetworkStateManager(connectivityManager);
     }
-
-//    @Provides
-//    ContactsManager provideContactsManager(NetworkApi networkApi) {
-//        return new ContactsManager(networkApi);
-//    }
 }

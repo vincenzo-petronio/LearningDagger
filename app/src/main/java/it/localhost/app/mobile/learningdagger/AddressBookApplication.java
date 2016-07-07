@@ -5,6 +5,7 @@ import android.app.Application;
 import it.localhost.app.mobile.learningdagger.dagger.components.AppComponent;
 import it.localhost.app.mobile.learningdagger.dagger.components.DaggerAppComponent;
 
+
 public class AddressBookApplication extends Application {
 
     private static AppComponent appComponent;

@@ -1,15 +1,6 @@
 package it.localhost.app.mobile.learningdagger.utils;
 
 import android.text.TextUtils;
-import android.util.Log;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
 import it.localhost.app.mobile.learningdagger.exception.NetworkException;
 
@@ -27,7 +18,7 @@ public class NetworkApi {
             return false;
         } else {
             // A random return ;-)
-            return Math.random() < 0.2;
+            return Math.random() < 0.8;
         }
     }
 

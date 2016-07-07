@@ -1,9 +1,5 @@
 package it.localhost.app.mobile.learningdagger.dagger.modules;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
