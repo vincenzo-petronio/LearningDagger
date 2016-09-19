@@ -12,7 +12,8 @@ import it.localhost.app.mobile.learningdagger.ui.dagger.modules.ContactsListActi
 import it.localhost.app.mobile.learningdagger.ui.dagger.modules.MainActivityModule;
 
 /**
- * Dagger Component.
+ * Dagger Component.<br>
+ * I Component dicono dove effettuare l'injection dei moduli.<br>
  */
 @Singleton
 @Component(

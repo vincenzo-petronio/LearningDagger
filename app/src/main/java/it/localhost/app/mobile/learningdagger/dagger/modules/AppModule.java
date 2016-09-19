@@ -13,10 +13,16 @@ import it.localhost.app.mobile.learningdagger.AddressBookApplication;
 import it.localhost.app.mobile.learningdagger.utils.NetworkStateManager;
 
 /**
- * Dagger Module per fornire le dipendenze globali
+ * Dagger Module.<br>
+ * I Modules dicono cosa fornire e come costruire tali oggetti.<br>
+ * Con questo Module vengono fornite le dipendenze globali.
  */
 @Module
 public class AppModule {
+
+    /**
+     * E' il Context dell'applicazione
+     */
     private final AddressBookApplication app;
 
     public AppModule(AddressBookApplication app) {
@@ -55,8 +61,8 @@ public class AppModule {
      */
     @Provides
     @Singleton
-    ConnectivityManager provideConnectivityManager() {
-        return (ConnectivityManager) app.getSystemService(app.CONNECTIVITY_SERVICE);
+    ConnectivityManager provideConnectivityManager(Context context) {
+        return (ConnectivityManager) context.getSystemService(context.CONNECTIVITY_SERVICE);
     }
 
     /**
